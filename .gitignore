@@ -2,3 +2,4 @@
 .idea/
 Run-or-Exclude-one-test-with-Gradle.iml
 build/
+gradle-app.setting

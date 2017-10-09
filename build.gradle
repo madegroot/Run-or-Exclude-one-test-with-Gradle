@@ -24,3 +24,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+// Example of excluding a fixed set
+// test {
+//     exclude '**/LegacyTest.class'
+// }
+
+//Dynamic exclude through property in the build.gradle file
+test {
+    if (project.hasProperty('excludeTests')) {
+        exclude project.property('excludeTests')
+    }
+}
+
